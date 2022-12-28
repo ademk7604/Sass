@@ -1,0 +1,75 @@
+body{
+    font-family: Poppins;
+}
+.weather-card{
+    background-color: rgb(48, 48, 48);
+    border-radius: 20px;
+    color: rgb(237, 237, 237);
+    display: flex;
+    .left{
+        flex: 2;
+        background-image: url("../img/bg.jpg");
+        background-size: cover;
+        background-position: center center;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 20px;
+        h2, h4, h5{
+            margin:0;
+        }
+        .top{
+            h2{
+              font-size: 2rem;
+            }
+            h4, h5{
+                font-size: 0.8rem;
+                font-weight: 500;
+            }
+
+            .bottom{
+                h2,h4{
+                  font-size: 3rem;
+                  line-height: 3.5rem; // line li lerin yuksekligi icin kullaniyoruz
+                }
+                 h5{
+                    font-size: 0.8rem;
+                   
+                }
+        }
+    }
+    .right{
+        flex: 3;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+        ul.status{
+            list-style-type: none; // li den kat=ynaklannan boslugu kaldirdik
+            padding: 0;
+            margin: 0;
+            li{
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+
+
+        ul.days{
+            list-style-type: none; // li den kat=ynaklannan boslugu kaldirdik
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+
+
+            li{
+                display: flex;
+
+            }
+        }
+    }
+}
